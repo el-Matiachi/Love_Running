@@ -12,7 +12,7 @@ body {
     color: #3a3a3a;
 }
 
-/*headings and logo*/
+/* headings and logo */
 
 h1,
 h2 {
@@ -57,7 +57,43 @@ h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/*This rule will style the line under the link of the page we're currently on*/
+/* This rule will style the line under the link of the page we're currently on */
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* hero image */
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.webp')no-repeat center center;
+
+    /* --------------------------------- THIS PART IS CSS ANIMATION -------------------------------------- */
+
+    /* annimates zoom effect on loading page */
+
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* creates the level of zoom for the image */
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* ----------------------------------- THIS IS THE END OF ANIMATION !! ----------------------------------- */
