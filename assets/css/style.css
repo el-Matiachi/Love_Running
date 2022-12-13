@@ -264,7 +264,7 @@ footer {
     width: 100%;
 }
 
-/* ------------------ MEDIA QUERIES FOR LARGER TO MEDIUM SCREEN SIZES FROM 1200 PX AND DOWN ---------------------------------- */
+/* ------------------ MEDIA QUERIES FOR LARGER TO MEDIUM SCREEN SIZES FROM 1200 PX WIDE AND DOWN ---------------------------------- */
 
 @media screen and (max-width: 1200px) {
     #club-ethos {
@@ -294,5 +294,20 @@ footer {
 
     hr {
         display: none;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+/* -------------------- MEDIA QUERIES FOR MEDIUM SCREEN SIZES FROM 950 PX WIDE AND DOWN ----------------------------------- */
+
+@media screen and (max-width: 950px) {
+
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
     }
 }
